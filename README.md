@@ -1,105 +1,186 @@
-# سراب | SARAB
+<div align="center">
 
-**تطبيق سطح مكتب لتحميل ومعالجة الوسائط محلياً على جهازك**
+<kbd>[العربية](README.md)</kbd> &nbsp;|&nbsp; <kbd>**English**</kbd>
 
-**A fast, minimalist desktop application for downloading and processing media locally**
+---
 
-**سراب (SARAB)** تطبيق سطح مكتب متعدد المنصات مبني باستخدام **Tauri** و**React** و**TypeScript**، صُمّم ليمنحك تحكماً مباشراً وسريعاً في تحميل ومعالجة الوسائط محلياً على جهازك دون تعقيد أو إعلانات أو إرسال بياناتك إلى خوادم خارجية.
+# [<img src="./logo-1024.png" width="45" align="center" alt="SARAB Multimedia Downloader">](https://github.com/Nyxoura/SARAB-multimedia-downloader) SARAB Multimedia Downloader
 
-### أبرز المزايا
+### Multimedia Downloader — SARAB
 
-* **معالجة محلية بالكامل (100% Local):** يعمل التطبيق على جهازك فقط؛ لا يحتفظ ببياناتك ولا يرسلها إلى خوادم خارجية.
+**Developed and maintained solely by [Nyxoura](https://github.com/Nyxoura)**
 
-* **واجهة ثنائية اللغة:** دعم كامل للغتين العربية والإنجليزية.
+---
 
-* **أدوات عملية للوسائط:** قص المقاطع بدقة، واستخراج الكوكيز تلقائياً، والاعتماد على أدوات المعالجة المحلية (`yt-dlp`، `ffmpeg`، `ffprobe`، `deno`).
+[![GitHub Release](https://img.shields.io/github/v/release/Nyxoura/SARAB-multimedia-downloader?style=flat&color=5865F2&label=Release)](https://github.com/Nyxoura/SARAB-multimedia-downloader/releases/latest)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/AGemVr9SH)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/nyxoura)
+[![License](https://img.shields.io/github/license/Nyxoura/SARAB-multimedia-downloader?color=green&label=License)](LICENSE)
 
-* **أداء عملي وتجربة نظيفة:** تصميم يركز على الوضوح والسرعة وسهولة الاستخدام اليومي.
+</div>
 
-### التشغيل والبناء محلياً
+> **A Note of Thanks & Appreciation**
+>
+> Feedback, feature suggestions, and bug reports are always welcome to help improve **SARAB Multimedia Downloader**.
+>
+> This project aims to provide a straightforward and accessible multimedia downloading experience with a clean workflow.
+>
+> Thank you to everyone who tries the tool, shares feedback, or supports its development. ❤️
 
-#### المتطلبات
+---
 
-* **Node.js** و **npm**
+<div align="center">
 
-* **Rust** و **Cargo** (لمنصة Tauri)
+<table>
+<tr>
+<td align="center" width="100%">
 
-* أدوات المعالجة المطلوبة إن لم تكن مضمّنة في بيئة البناء: `yt-dlp`، `ffmpeg`، `ffprobe`، `deno`.
+<br>
 
-#### خطوات التشغيل
+### ☕ Like SARAB? Support its development
 
+<br>
+
+**If you'd like to help keep development going and support future updates,**  
+**consider supporting me on Ko-fi with any amount** 🙏
+
+<br>
+
+[![Ko-fi](https://img.shields.io/badge/☕%20Support%20on%20Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white&labelColor=1a1a1a)](https://ko-fi.com/nyxoura)
+
+<br>
+
+> 💡 Your support helps keep this project maintained and actively improved
+
+<br>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 📖 About
+
+**SARAB Multimedia Downloader** is a multimedia downloading application independently developed and maintained by **Nyxoura**.
+
+### Highlights
+
+- ⚡ **Fast & straightforward** — clean and practical workflow
+- 🖥️ **Desktop application** — built with a modern interface
+- 🔄 **Ongoing updates** — continuous improvements across releases
+- 💬 **Community support** — connect directly on Discord
+
+Join the Discord server for updates and support: **[discord.gg/AGemVr9SH](https://discord.gg/AGemVr9SH)**
+
+---
+
+## 👤 Owner & Developer
+
+| Name | Role |
+|------|------|
+| **Nyxoura** | Sole Owner & Developer — architecture, development, and release management |
+
+---
+
+## 📥 Installation
+
+Download the latest release from the [**Releases page**](https://github.com/Nyxoura/SARAB-multimedia-downloader/releases/latest).
+
+Windows installers are provided in two formats:
+- **`.msi`** — suited for standard or administrative/enterprise Windows installations.
+- **`.exe`** — standard Windows setup executable.
+
+### Installation Steps (Windows)
+1. Go to the [**Releases page**](https://github.com/Nyxoura/SARAB-multimedia-downloader/releases/latest) and download either the `.msi` or `.exe` installer.
+2. Run the installer and follow the prompts to complete setup.
+
+---
+
+## 🛠️ Building from Source
+
+### Requirements
+
+- [Git](https://git-scm.com/download)
+- [Node.js](https://nodejs.org/)
+
+### Steps
+
+**0. Unzip ( extract ) src-tauri,scripts and src
+
+**1. Clone the repository**
+
+```shell
+git clone https://github.com/Nyxoura/SARAB-multimedia-downloader
+cd SARAB-multimedia-downloader
 ```
-# 1. فك ضغط كل من src-tauri و scripts و src
 
-# 2. تثبيت حزم الواجهة الأمامية
+**2. Install dependencies**
+
+```shell
 npm install
-
-# 3. تشغيل التطبيق في وضع التطوير
-npm run tauri dev
-
-# 4. بناء نسخة التوزيع النهائية
-npm run tauri build
-
 ```
 
-### الإصدارات (Releases)
+**3. Run development or build**
 
-النسخ الجاهزة وملفات التثبيت متوفرة في قسم **Releases** داخل المستودع، حيث يُنشر كل إصدار مع ملاحظات التحديث الخاصة به.
-
-### إخلاء مسؤولية واستخدام مسؤول
-
-يُستخدم التطبيق لمعالجة وتحميل المحتوى المصرح لك بالوصول إليه أو تحميله وفقاً للقوانين المعمول بها وشروط المنصات المعنية.
-
-## English
-
-**SARAB (سراب)** is a cross-platform desktop application built with **Tauri**, **React**, and **TypeScript**, engineered for fast, distraction-free local media downloading and processing—with zero external data collection or server retention.
-
-### Key Highlights
-
-* **Strictly Local Execution:** Runs directly on your machine without storing or transmitting your data to external servers.
-
-* **Bilingual Experience:** Full support for both Arabic and English interfaces.
-
-* **Practical Media Capabilities:** Clip trimming, automated cookie extraction, and local media pipelines powered by `yt-dlp`, `ffmpeg`, `ffprobe`, and `deno`.
-
-* **Clean, Focused Craft:** Minimalist desktop workflows designed for speed, clarity, and reliability.
-
-### Local Setup & Build
-
-#### Prerequisites
-
-* **Node.js** & **npm**
-
-* **Rust** & **Cargo** (for Tauri)
-
-* Required media binaries if not bundled in your build environment: `yt-dlp`, `ffmpeg`, `ffprobe`, and `deno`.
-
-#### Commands
-
-```
-1. Unzip ( extract ) src-tauri,scripts and src
-
-# 2. Install frontend dependencies
-npm install
-
-# 3. Run in development mode
-npm run tauri dev
-
-# 4. Build production release
-npm run tauri build
-
+```shell
+npm run dev
 ```
 
-### Releases
+```shell
+npm run build
+```
 
-Pre-built installers and release packages are published under the **Releases** tab along with changelog notes for each version.
+---
 
-### Disclaimer
+## ❤️ Support
 
-Use this software responsibly and only with media or sources you have the right or authorization to access and process in compliance with applicable laws and platform terms.
+<div align="center">
 
-**سراب (SARAB)** — محلي • سريع • واضح
+[![Ko-fi](https://img.shields.io/badge/☕%20Support%20on%20Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white&labelColor=1a1a1a)](https://ko-fi.com/nyxoura)
 
-**Local • Fast • Clean**
+</div>
 
-للدعم | For support | https://discord.gg/AGemVr9SH
+If you find this project useful, you can support it by:
+
+- ☕ **Donating** on [Ko-fi](https://ko-fi.com/nyxoura)
+- ⭐ **Starring** the repository on GitHub
+- 📢 **Sharing** the project with others
+- 💬 **Joining the Discord server**: **[discord.gg/AGemVr9SH](https://discord.gg/AGemVr9SH)**
+- 🐛 **Reporting issues or suggesting features** via [Issues](https://github.com/Nyxoura/SARAB-multimedia-downloader/issues)
+
+---
+
+## 📊 Star History
+
+<a href="https://star-history.com/#Nyxoura/SARAB-multimedia-downloader&Timeline">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Nyxoura/SARAB-multimedia-downloader&type=Timeline&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Nyxoura/SARAB-multimedia-downloader&type=Timeline" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Nyxoura/SARAB-multimedia-downloader&type=Timeline" />
+  </picture>
+</a>
+
+---
+
+## ⚠️ Disclaimer
+
+Please use this tool in compliance with applicable laws and the terms of service of any platforms or media you interact with. Users are responsible for how they use the application.
+
+---
+
+## 📜 Credits & License
+
+**Maintained by:** [Nyxoura](https://github.com/Nyxoura)
+
+---
+
+<div align="center">
+
+**SARAB Multimedia Downloader** • Made by [Nyxoura](https://github.com/Nyxoura) • [License](LICENSE)
+
+[⬆ Back to top](#)
+
+</div>
