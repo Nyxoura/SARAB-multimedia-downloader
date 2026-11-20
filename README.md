@@ -101,3 +101,5 @@ Use this software responsibly and only with media or sources you have the right 
 **سراب (SARAB)** — محلي • سريع • واضح
 
 **Local • Fast • Clean**
+
+للدعم | For support | https://discord.gg/AGemVr9SH
