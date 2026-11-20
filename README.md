@@ -1,6 +1,6 @@
 # سراب | SARAB
 
-**تطبيق سطح مكتب سريع ومينيمال لتحميل ومعالجة الوسائط محلياً على جهازك**
+**تطبيق سطح مكتب لتحميل ومعالجة الوسائط محلياً على جهازك**
 
 **A fast, minimalist desktop application for downloading and processing media locally**
 
@@ -29,13 +29,15 @@
 #### خطوات التشغيل
 
 ```
-# 1. تثبيت حزم الواجهة الأمامية
+# 1. فك ضغط كل من src-tauri و scripts و src
+
+# 2. تثبيت حزم الواجهة الأمامية
 npm install
 
-# 2. تشغيل التطبيق في وضع التطوير
+# 3. تشغيل التطبيق في وضع التطوير
 npm run tauri dev
 
-# 3. بناء نسخة التوزيع النهائية
+# 4. بناء نسخة التوزيع النهائية
 npm run tauri build
 
 ```
@@ -75,13 +77,15 @@ npm run tauri build
 #### Commands
 
 ```
-# 1. Install frontend dependencies
+1. Unzip ( extract ) src-tauri,scripts and src
+
+# 2. Install frontend dependencies
 npm install
 
-# 2. Run in development mode
+# 3. Run in development mode
 npm run tauri dev
 
-# 3. Build production release
+# 4. Build production release
 npm run tauri build
 
 ```
